@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Nunito:wght@300;400;600&display=swap');
+
+:root {
+  /* Colors */
+  --color-bg: #F5F1E8;      /* 温暖米白 */
+  --color-primary: #D97757; /* 陶土橙 */
+  --color-secondary: #8B7355; /* 土壤棕 */
+  --color-success: #7A9E7E; /* 植物绿 */
+  --color-text: #2D2A26;    /* 深褐 */
+  --color-surface: #FFFFFF; /* 卡片白 */
+  --color-input-bg: #EFEBE0; /* 灰白 */
+
+  /* Typography */
+  --font-heading: 'Noto Serif SC', serif;
+  --font-body: 'Nunito', sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(45, 42, 38, 0.04);
+  --shadow-md: 0 8px 24px rgba(45, 42, 38, 0.08);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* Utilities */
+.container {
+  max-width: 480px; /* Mobile app feel */
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 32px 24px; /* 留白充足 */
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--color-secondary);
+  font-weight: 300;
+  margin-bottom: 32px;
+}
